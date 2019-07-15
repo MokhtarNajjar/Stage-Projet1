@@ -1,0 +1,34 @@
+
+<p>mokh works!</p>
+<p></p>
+<form  #f="ngForm">
+        <button routerLink="/register" class="btn btn-success pull-right" > 
+            Register </button>
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1"
+       aria-describedby="emailHelp" name="username" placeholder="Enter email" 
+       #email="ngModel" ngModel  required>
+       <h1>{{etat}}</h1>
+      <small id="emailHelp" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" 
+      placeholder="Password" name="password" #password="ngModel" ngModel required>
+    </div>
+    <div class="form-check">
+      </div>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit(email,password)">Submit</button>
+  <p></p>
+    <button type="submit" class="btn btn-primary" (click)="LogGoogle()">LogIn with Google</button>
+    <button type="submit" class="btn btn-primary" (click)="LogFacebook()">LogIn with Facebook</button>
+    <button type="submit" class="btn btn-primary" (click)="LogTwitter()">LogIn with twitter</button>
+    <p></p>
+    <button type="submit" class="btn btn-primary" (click)="LogGithub()">LogIn with Github</button>
+      
+    </form>
+
+
+
+ 
